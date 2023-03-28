@@ -75,7 +75,7 @@ include "spring-boot-tests:spring-boot-integration-tests:spring-boot-configurati
 include "spring-boot-tests:spring-boot-integration-tests:spring-boot-launch-script-tests"
 include "spring-boot-tests:spring-boot-integration-tests:spring-boot-loader-tests"
 include "spring-boot-tests:spring-boot-integration-tests:spring-boot-server-tests"
-
+include "thread-boot-test"
 file("${rootDir}/spring-boot-project/spring-boot-starters").eachDirMatch(~/spring-boot-starter.*/) {
 	include "spring-boot-project:spring-boot-starters:${it.name}"
 }
@@ -83,3 +83,4 @@ file("${rootDir}/spring-boot-project/spring-boot-starters").eachDirMatch(~/sprin
 file("${rootDir}/spring-boot-tests/spring-boot-smoke-tests").eachDirMatch(~/spring-boot-smoke-test.*/) {
 	include "spring-boot-tests:spring-boot-smoke-tests:${it.name}"
 }
+

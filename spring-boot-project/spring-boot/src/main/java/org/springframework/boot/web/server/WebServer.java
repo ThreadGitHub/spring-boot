@@ -20,6 +20,7 @@ package org.springframework.boot.web.server;
  * Simple interface that represents a fully configured web server (for example Tomcat,
  * Jetty, Netty). Allows the server to be {@link #start() started} and {@link #stop()
  * stopped}.
+ * <p>通用接口那代表一个全部配置webServer 例如：tomcat,Jetty,Netty,允许对于这个服务启动和关闭</p>
  *
  * @author Phillip Webb
  * @author Dave Syer

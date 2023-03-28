@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: thread-boot-test
+
+server:
+  port: 9999

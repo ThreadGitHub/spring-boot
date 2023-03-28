@@ -85,6 +85,7 @@ import org.springframework.util.StringUtils;
  * <p>
  * Unless explicitly configured otherwise this factory will create containers that listen
  * for HTTP requests on port 8080.
+ * <p>除非显示的配置，否则这个工厂将创建一个容器监听在HTTP端口8080上</p>
  *
  * @author Phillip Webb
  * @author Dave Syer

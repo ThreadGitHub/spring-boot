@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    //springboot插件,会自动引入parent包
+    id "org.springframework.boot.conventions"
+}
+
+//用springboot插件必须要有description属性
+description = "thread-boot-test"
+
+dependencies {
+    //引入web模块
+    implementation(project(":spring-boot-project:spring-boot-starters:spring-boot-starter-web"))
+    //springboot测试模块
+    testImplementation(project(":spring-boot-project:spring-boot-starters:spring-boot-starter-test"))
+}
+
+test {
+    useJUnitPlatform()
+}

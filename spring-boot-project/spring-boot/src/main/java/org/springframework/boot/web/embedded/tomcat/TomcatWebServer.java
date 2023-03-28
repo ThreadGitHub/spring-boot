@@ -203,6 +203,10 @@ public class TomcatWebServer implements WebServer {
 		awaitThread.start();
 	}
 
+	/**
+	 * 启动TomcatWebServer
+	 * @throws WebServerException
+	 */
 	@Override
 	public void start() throws WebServerException {
 		synchronized (this.monitor) {
@@ -213,6 +217,7 @@ public class TomcatWebServer implements WebServer {
 				addPreviouslyRemovedConnectors();
 				Connector connector = this.tomcat.getConnector();
 				if (connector != null && this.autoStart) {
+					//执行延迟启动加载
 					performDeferredLoadOnStartup();
 				}
 				checkThatConnectorsHaveStarted();
